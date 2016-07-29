@@ -1,0 +1,385 @@
+mysql> source ~/CREATE.txt
+Query OK, 0 rows affected (0.05 sec)
+
+Query OK, 0 rows affected (0.01 sec)
+
+Query OK, 0 rows affected (0.01 sec)
+
+Query OK, 0 rows affected (0.02 sec)
+
+Query OK, 0 rows affected (0.02 sec)
+
+Query OK, 0 rows affected (0.02 sec)
+
+Query OK, 0 rows affected (0.02 sec)
+
+Query OK, 0 rows affected (0.02 sec)
+
+Query OK, 0 rows affected (0.02 sec)
+
+Query OK, 0 rows affected (0.02 sec)
+
+Query OK, 0 rows affected (0.01 sec)
+
+Query OK, 0 rows affected (0.02 sec)
+
+Query OK, 0 rows affected (0.02 sec)
+
+Query OK, 0 rows affected (0.02 sec)
+
+Query OK, 0 rows affected (0.02 sec)
+
+Query OK, 0 rows affected (0.01 sec)
+
+Query OK, 0 rows affected (0.02 sec)
+
+Query OK, 0 rows affected (0.02 sec)
+
+Query OK, 0 rows affected (0.02 sec)
+
+Query OK, 0 rows affected (0.01 sec)
+
+Query OK, 0 rows affected (0.02 sec)
+
+Query OK, 0 rows affected (0.02 sec)
+
+mysql> \. LOAD.txt
+Query OK, 0 rows affected, 2 warnings (0.00 sec)
+Records: 6  Deleted: 0  Skipped: 6  Warnings: 2
+
+Query OK, 0 rows affected (0.00 sec)
+Records: 5  Deleted: 0  Skipped: 5  Warnings: 0
+
+Query OK, 0 rows affected (0.00 sec)
+Records: 5  Deleted: 0  Skipped: 5  Warnings: 0
+
+Query OK, 0 rows affected (0.00 sec)
+Records: 5  Deleted: 0  Skipped: 5  Warnings: 0
+
+Query OK, 0 rows affected (0.01 sec)
+Records: 5  Deleted: 0  Skipped: 5  Warnings: 0
+
+Query OK, 0 rows affected (0.00 sec)
+Records: 5  Deleted: 0  Skipped: 5  Warnings: 0
+
+Query OK, 0 rows affected, 1 warning (0.00 sec)
+Records: 5  Deleted: 0  Skipped: 5  Warnings: 1
+
+Query OK, 5 rows affected, 1 warning (0.04 sec)
+Records: 5  Deleted: 0  Skipped: 0  Warnings: 1
+
+Query OK, 7 rows affected (0.01 sec)
+Records: 7  Deleted: 0  Skipped: 0  Warnings: 0
+
+Query OK, 7 rows affected (0.02 sec)
+Records: 7  Deleted: 0  Skipped: 0  Warnings: 0
+
+Query OK, 5 rows affected, 1 warning (0.02 sec)
+Records: 6  Deleted: 0  Skipped: 1  Warnings: 1
+
+Query OK, 0 rows affected, 3 warnings (0.00 sec)
+Records: 12  Deleted: 0  Skipped: 12  Warnings: 3
+
+Query OK, 0 rows affected (0.00 sec)
+Records: 9  Deleted: 0  Skipped: 9  Warnings: 0
+
+Query OK, 0 rows affected (0.00 sec)
+Records: 5  Deleted: 0  Skipped: 5  Warnings: 0
+
+Query OK, 0 rows affected (0.00 sec)
+Records: 5  Deleted: 0  Skipped: 5  Warnings: 0
+
+Query OK, 0 rows affected (0.00 sec)
+Records: 5  Deleted: 0  Skipped: 5  Warnings: 0
+
+Query OK, 0 rows affected (0.00 sec)
+Records: 10  Deleted: 0  Skipped: 10  Warnings: 0
+
+Query OK, 0 rows affected (0.00 sec)
+Records: 5  Deleted: 0  Skipped: 5  Warnings: 0
+
+Query OK, 0 rows affected (0.00 sec)
+Records: 5  Deleted: 0  Skipped: 5  Warnings: 0
+
+Query OK, 0 rows affected (0.00 sec)
+Records: 10  Deleted: 0  Skipped: 10  Warnings: 0
+
+Query OK, 0 rows affected (0.01 sec)
+Records: 9  Deleted: 0  Skipped: 9  Warnings: 0
+
+Query OK, 0 rows affected (0.00 sec)
+Records: 5  Deleted: 0  Skipped: 5  Warnings: 0
+
+
+mysql> \. SELECT.txt
++---------------+---------+--------------+-------+---------------+
+| StudentNumber | Phone   | Name         | Major | DegreeCredits |
++---------------+---------+--------------+-------+---------------+
+|         10920 | 2237271 | Zi Zhuo      | IE    |            44 |
+|         12939 | 6764344 | Bohu Tang    | CE    |            33 |
+|         23892 | 2098309 | Xijie Zai    | CS    |            43 |
+|         28109 | 6763827 | Zhonghua DA  | EE    |            32 |
+|         29828 | 2837289 | Batia lin    | EE    |            32 |
+|         31232 | 6763324 | Zeming Jiang | EE    |            30 |
+|         75837 | 2736494 | Tony Fan     | ME    |            34 |
+|         91029 | 3273172 | Zhuo Chen    | ME    |            34 |
+|         91029 | 3747372 | Kexin Wang   | EE    |            33 |
+|         98298 | 4737272 | Shen Zhuo    | CS    |            43 |
++---------------+---------+--------------+-------+---------------+
+10 rows in set (0.00 sec)
+
++-------------+---------------+---------+--------------+
+| Nationality | StudentNumber | Phone   | Name         |
++-------------+---------------+---------+--------------+
+| India       |         10920 | 2237271 | Zi Zhuo      |
+| Italy       |         12939 | 6764344 | Bohu Tang    |
+| England     |         28109 | 6763827 | Zhonghua DA  |
+| China       |         31232 | 6763324 | Zeming Jiang |
+| Japan       |         91029 | 3273172 | Zhuo Chen    |
++-------------+---------------+---------+--------------+
+5 rows in set (0.01 sec)
+
++------------+---------------+---------+------------+
+| Homestate  | StudentNumber | Phone   | Name       |
++------------+---------------+---------+------------+
+| Florida    |         23892 | 2098309 | Xijie Zai  |
+| Virginia   |         29828 | 2837289 | Batia lin  |
+| Colorado   |         75837 | 2736494 | Tony Fan   |
+| California |         91029 | 3747372 | Kexin Wang |
+| Texas      |         98298 | 4737272 | Shen Zhuo  |
++------------+---------------+---------+------------+
+5 rows in set (0.00 sec)
+
++---------------+---------+--------+----------+----------+
+| StudentNumber | Phone   | Number | Location | Semester |
++---------------+---------+--------+----------+----------+
+|         10920 | 2237271 |    608 | HRBB124  |        2 |
+|         12939 | 6764344 |    108 | ZACH203  |        2 |
+|         23892 | 2098309 |    619 | HRBB124  |        3 |
+|         28109 | 6763827 |    216 | ETB2001  |        3 |
+|         29828 | 2837289 |    473 | CHEN201  |        4 |
+|         31232 | 6763324 |    204 | ZACH203  |        1 |
+|         75837 | 2736494 |    654 | HRBB201  |        2 |
+|         91029 | 3273172 |    215 | ETB2005  |        2 |
+|         91029 | 3747372 |    618 | ETB1005  |        1 |
+|         98298 | 4737272 |    602 | ZACH105  |        1 |
++---------------+---------+--------+----------+----------+
+10 rows in set (0.00 sec)
+
++---------+------------------+---------------+---------+
+| StaffID | Email            | StudentNumber | Phone   |
++---------+------------------+---------------+---------+
+|    1001 | jerryw@tamu.edu  |         31232 | 6763324 |
+|    1345 | Johnt@tamu.edu   |         12939 | 6764344 |
+|    2452 | alext@tamu.edu   |         28109 | 6763827 |
+|    3001 | andrewj@tamu.edu |         29828 | 2837289 |
+|    3421 | robertl@tamu.edu |         10920 | 2237271 |
+|    4001 | pengl@tamu.edu   |         23892 | 2098309 |
+|    4323 | helenj@tamu.edu  |         91029 | 3747372 |
+|    6123 | harryp@tamu.edu  |         98298 | 4737272 |
+|    7465 | toma@tamu.edu    |         91029 | 3273172 |
++---------+------------------+---------------+---------+
+9 rows in set (0.00 sec)
+
++------------+------------+---------------+---------+
+| Name       | Date       | StudentNumber | Phone   |
++------------+------------+---------------+---------+
+| BASKETBALL | 2014-12-01 |         10920 | 2237271 |
+| BOXING     | 2014-11-30 |         91029 | 3273172 |
+| FOOTBALL   | 2014-10-21 |         28109 | 6763827 |
+| RACING     | 2014-10-11 |         31232 | 6763324 |
+| SWIMMING   | 2014-11-10 |         12939 | 6764344 |
++------------+------------+---------------+---------+
+5 rows in set (0.01 sec)
+
++-------------+----------------+---------------+
+| CompanyName | Address        | Area          |
++-------------+----------------+---------------+
+| APPLE       | Cupertino,CA   | IT            |
+| CHEVRON     | San Ramon,CA   | Energy        |
+| DELL        | Round Rock,TX  | IT            |
+| IBM         | Armonk,NY      | Hardware      |
+| INTEL       | Santa Clara,CA | Hardware      |
+| QUALCOMM    | San Diego,CA   | IT            |
+| TI          | Dallas,TX      | Semiconductor |
++-------------+----------------+---------------+
+7 rows in set (0.00 sec)
+
++---------------+---------+-------------+-----------+----------------------+
+| StudentNumber | Phone   | CompanyName | Minsalary | Position             |
++---------------+---------+-------------+-----------+----------------------+
+|         31232 | 6763324 | INTEL       | 97K       | RF Engineer          |
+|         12939 | 6764344 | IBM         | 108K      | Archtecture Engineer |
+|         28109 | 6763827 | APPLE       | 11K       | Business Analyst     |
+|         91029 | 3273172 | QUALCOMM    | 90K       | Solid Technician     |
+|         10920 | 2237271 | TI          | 75K       | Analog Head          |
+|         98298 | 4737272 | DELL        | 88K       | Sales Manager        |
+|         91029 | 3747372 | CHEVRON     | 76K       | Financial consultant |
++---------------+---------+-------------+-----------+----------------------+
+7 rows in set (0.00 sec)
+
++--------+-------------+----------------------+------------+
+| Number | CompanyName | Position             | Area       |
++--------+-------------+----------------------+------------+
+|  23344 | IBM         | Business Analyst     | Business   |
+|  88889 | QUALCOMM    | Sales Engineer       | Sales      |
+|  89549 | APPLE       | DSP Software Designe | DSP Design |
+|  89565 | INTEL       | Financial Analyst    | Finance    |
+|  89577 | TI          | RF Device Modeling   | RF Design  |
++--------+-------------+----------------------+------------+
+5 rows in set (0.00 sec)
+
++------------+------------+-------------+------------+
+| Name       | Date       | Location    | Organiser  |
++------------+------------+-------------+------------+
+| BASKETBALL | 2014-12-01 | EMOND ARENA | BASKETBOY  |
+| BOXING     | 2014-11-30 | CANFEILD    | STANSPORTS |
+| FOOTBALL   | 2014-10-21 | KYLE FIELD  | 12THMAN    |
+| RACING     | 2014-10-11 | MSC2004     | ISS        |
+| SWIMMING   | 2014-11-10 | REC         |            |
++------------+------------+-------------+------------+
+5 rows in set (0.00 sec)
+
++----------------------+--------+----------+---------+-------+
+| Name                 | Number | Location | Credits | Hours |
++----------------------+--------+----------+---------+-------+
+| Fundamental Network  |    108 | ZACH203  |       3 |   150 |
+| Linear System        |    204 | ZACH203  |       3 |   150 |
+| Analog Circuit       |    215 | ETB2005  |       4 |   200 |
+| Digital Circuit      |    216 | ETB2001  |       4 |   200 |
+| Digital Signal Proce |    473 | CHEN201  |       4 |   200 |
+| Adv. Computer Networ |    602 | ZACH105  |       3 |   150 |
+| Database System      |    608 | HRBB124  |       3 |   150 |
+| Micro Processor      |    618 | ETB1005  |       4 |   200 |
+| Operating System     |    619 | HRBB124  |       3 |   150 |
+| Adv. Computer Arch   |    654 | HRBB201  |       4 |   200 |
+| Power Electronics    |    672 | ETB3002  |       3 |   150 |
+| SpecialTopic in Data |    689 | CHEN108  |       3 |   150 |
++----------------------+--------+----------+---------+-------+
+12 rows in set (0.00 sec)
+
++---------+--------------+-----------------+----------+-------------+
+| StaffID | Name         | Title           | Office   | Email       |
++---------+--------------+-----------------+----------+-------------+
+|    1001 | Jerry Wang   | Assistant Prof. | WEB215   | jw@tamu.edu |
+|    1345 | John Teddy   | Prof.           | WEB311   | jt@tamu.edu |
+|    2452 | Alex Tse     | Associate Prof. | HRBB321  | at@tamu.edu |
+|    3001 | Andrew Jiang | Prof.           | CHAN431  | aj@tamu.edu |
+|    3421 | Robert Liang | Prof.           | HRBB236  | rl@tamu.edu |
+|    4001 | Peng Li      | Prof.           | WEB621   | pl@tamu.edu |
+|    4323 | Helen Jean   | Associate Prof. | MATTB504 | hj@tamu.edu |
+|    6123 | Harry Potter | Associate Prof. | CHEN403  | hp@tamu.edu |
+|    7465 | Tom Allen    | Assistant Prof. | HELD453  | ta@tamu.edu |
++---------+--------------+-----------------+----------+-------------+
+9 rows in set (0.00 sec)
+
++--------------+--------------+---------+------------------+--------+
+| Head         | MainBuilding | StaffID | Email            | Salary |
++--------------+--------------+---------+------------------+--------+
+| ANDREW JIANG | HRBB         |    3421 | robertl@tamu.edu | 130000 |
+| PENG LI      | WEB          |    1001 | jerryw@tamu.edu  | 140000 |
+| PENG LI      | WEB          |    1345 | Johnt@tamu.edu   | 140000 |
+| PENG LI      | WEB          |    7465 | toma@tamu.edu    | 140000 |
+| RADDY        | MATTB        |    4323 | helenj@tamu.edu  | 120000 |
++--------------+--------------+---------+------------------+--------+
+5 rows in set (0.00 sec)
+
++---------+------------------+--------+----------+
+| StaffID | Email            | Number | Location |
++---------+------------------+--------+----------+
+|    1001 | jerryw@tamu.edu  |    689 | CHEN108  |
+|    1345 | Johnt@tamu.edu   |    215 | ETB2005  |
+|    3421 | robertl@tamu.edu |    619 | HRBB124  |
+|    6123 | harryp@tamu.edu  |    672 | ETB3002  |
+|    7465 | toma@tamu.edu    |    618 | ETB1005  |
++---------+------------------+--------+----------+
+5 rows in set (0.00 sec)
+
++-----------+-------------+-----------+-------------+
+| PreNumber | PreLocation | AdvNumber | AdvLocation |
++-----------+-------------+-----------+-------------+
+|       108 | ZACH203     |       602 | ZACH105     |
+|       204 | ZACH203     |       473 | CHEN201     |
+|       215 | ETB2005     |       672 | ETB3002     |
+|       216 | ETB2001     |       654 | HRBB201     |
+|       216 | ETB2001     |       672 | ETB3002     |
++-----------+-------------+-----------+-------------+
+5 rows in set (0.01 sec)
+
++-----------+----------------------+---------+-------------------+------+
+| Name      | Address              | Type    | Website           | Rank |
++-----------+----------------------+---------+-------------------+------+
+| berkeley  | Berkeley,CA          | PUBLIC  | www.berkeley.edu  |    4 |
+| Caltech   | 1200E California Blv | PRIVATE | www.caltech.edu   |    2 |
+| MIT       | 77 Massachusetts Ave | PRIVATE | www.mit.edu       |    1 |
+| Standford | 450 Serra Mall       | PRIVATE | www.standford.edu |    3 |
+| TAMU      | COLLEGE STATION,TX   | PUBLIC  | www.tamu.edu      |    5 |
++-----------+----------------------+---------+-------------------+------+
+5 rows in set (0.00 sec)
+
++--------------+---------------+----------------+---------+
+| Head         | Main_Building | Student_Number | Phone   |
++--------------+---------------+----------------+---------+
+| ANDERSON     | RSC           |            324 | 8931752 |
+| ANDREW JIANG | HRBB          |            201 | 1113132 |
+| PENG LI      | WEB           |            311 | 1312342 |
+| RADDY        | MATTB         |            313 | 5353674 |
+| YIFAN JIANG  | ETB           |            213 | 3134523 |
++--------------+---------------+----------------+---------+
+5 rows in set (0.00 sec)
+
++--------------+---------------+----------------+
+| Head         | Main_Building | UniversityName |
++--------------+---------------+----------------+
+|              |               |                |
+| ANDERSON     | RSC           | TAMU           |
+| ANDREW JIANG | HRBB          | TAMU           |
+| PENG LI      | WEB           | TAMU           |
+| RADDY        | MATTB         | TAMU           |
+| YIFAN JIANG  | ETB           | TAMU           |
++--------------+---------------+----------------+
+6 rows in set (0.00 sec)
+
++----------------+-------------+
+| UniversityName | CompanyName |
++----------------+-------------+
+| BERKELEY       | IBM         |
+| CALTECH        | QUALCOMM    |
+| MIT            | INTEL       |
+| STANDFORD      | APPLE       |
+| TAMU           | TI          |
++----------------+-------------+
+5 rows in set (0.00 sec)
+
++-------------------+---------------+--------------+
+| Name              | Main_Building | Head         |
++-------------------+---------------+--------------+
+| CIVIL ENGINEERING | ETB           | Yifan Jiang  |
+| CS                | HRBB          | Andrew Jiang |
+| MATHEMATICS       | MATTB         | Raddy Wong   |
+| Finance           | RSC           | Anderson     |
+| ECE               | WEB           | Peng Li      |
++-------------------+---------------+--------------+
+5 rows in set (0.00 sec)
+
++----------------+----------------+----------------+
+| UniversityName | ActivitiesName | ActivitiesDate |
++----------------+----------------+----------------+
+| Berkeley       | SWIMMING       | 2014-11-10     |
+| CALTECH        | BASKETBALL     | 2014-12-01     |
+| MIT            | RACING         | 2014-10-11     |
+| STANDFORD      | BOXING         | 2014-11-30     |
+| TAMU           | FOOTBALL       | 2014-10-21     |
++----------------+----------------+----------------+
+5 rows in set (0.00 sec)
+
++--------------+---------------+---------------+-----------------+
+| Head         | Main_Building | CoursesNumber | CoursesLocation |
++--------------+---------------+---------------+-----------------+
+| ANDERSON     | RSC           |           602 | NATIONLAND      |
+| ANDREW JIANG | HRBB          |           608 | WEB             |
+| PENG LI      | WEB           |           454 | RSC             |
+| RADDY        | MATTB         |           411 | HRBB            |
+| YIFAN JIANG  | ETB           |           712 | ZACHARY         |
++--------------+---------------+---------------+-----------------+
+5 rows in set (0.00 sec)

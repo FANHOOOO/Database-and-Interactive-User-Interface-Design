@@ -1,0 +1,7 @@
+
+SELECT * FROM Students;
+SELECT * FROM InternationalStudent;
+SELECT * FROM LocalStudent;
+SELECT * FROM Take;
+SELECT * FROM Supervise;
+SELECT * FROM Participate;

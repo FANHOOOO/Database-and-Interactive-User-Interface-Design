@@ -1,0 +1,50 @@
+CREATE TABLE Students (
+StudentNumber INT,
+Phone INT,
+Name VARCHAR(20),
+Major VARCHAR(20),
+DegreeCredits INT,
+PRIMARY KEY (StudentNumber, Phone)
+);
+
+CREATE TABLE InternationalStudent (
+Nationality VARCHAR(20),
+StudentNumber INT,
+Phone INT,
+Name VARCHAR(20),
+PRIMARY KEY (StudentNumber, Phone)
+);
+
+CREATE TABLE LocalStudent (
+Homestate VARCHAR(20),
+StudentNumber INT,
+Phone INT,
+Name VARCHAR(20),
+PRIMARY KEY (StudentNumber, Phone)
+);
+
+CREATE TABLE Take (
+StudentNumber INT,
+Phone INT,
+Number INT,
+Location VARCHAR(20),
+Semester INT,
+PRIMARY KEY (StudentNumber, Phone, Number, Location)
+);
+
+CREATE TABLE Supervise (
+StaffID INT,
+Email VARCHAR(20),
+StudentNumber INT,
+Phone INT,
+PRIMARY KEY (StaffID, Email, StudentNumber, Phone)
+);
+
+CREATE TABLE Participate (
+Name VARCHAR(20),
+Date DATE,
+StudentNumber INT,
+Phone INT,
+PRIMARY KEY (Name, Date, StudentNumber, Phone)
+);
+

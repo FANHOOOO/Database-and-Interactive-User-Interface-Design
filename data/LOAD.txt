@@ -1,0 +1,14 @@
+
+LOAD DATA LOCAL INFILE ‘~/StudentData.txt’ INTO TABLE Students LINES TERMINATED BY ‘\r\n’;
+
+
+LOAD DATA LOCAL INFILE ‘~/NationalityData.txt’ INTO TABLE InternationalStudent LINES TERMINATED BY ‘\r\n’;
+
+LOAD DATA LOCAL INFILE ‘~/HomestateData.txt’ INTO TABLE LocalStudent LINES TERMINATED BY ‘\r\n’;
+
+LOAD DATA LOCAL INFILE ‘~/TakeData.txt’ INTO TABLE Take LINES TERMINATED BY ‘\r\n’;
+
+LOAD DATA LOCAL INFILE ‘~/SuperviseData.txt’ INTO TABLE Supervise LINES TERMINATED BY ‘\r\n’;
+
+LOAD DATA LOCAL INFILE ‘~/ParticipateData.txt’ INTO TABLE Participate LINES TERMINATED BY ‘\r\n’;
+
